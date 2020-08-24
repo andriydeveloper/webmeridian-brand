@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	<body>
+		<referenceContainer name="content">
+			<block class="WebMeridian\Brand\Block\Index\Index" name="index.index" template="WebMeridian_Brand::index/index.phtml"/>
+			<block as="brand_form" class="WebMeridian\Brand\Block\Brand\Form" name="brand.form" template="WebMeridian_Brand::brand/form.phtml"/>
+		</referenceContainer>
+	</body>
+</page>

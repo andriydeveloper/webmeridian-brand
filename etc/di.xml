@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<preference for="WebMeridian\Brand\Api\BrandRepositoryInterface" type="WebMeridian\Brand\Model\BrandRepository"/>
+	<preference for="WebMeridian\Brand\Api\Data\BrandInterface" type="WebMeridian\Brand\Model\Data\Brand"/>
+	<preference for="WebMeridian\Brand\Api\Data\BrandSearchResultsInterface" type="Magento\Framework\Api\SearchResults"/>
+</config>
