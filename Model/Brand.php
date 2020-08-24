@@ -3,7 +3,6 @@
  * Copyright ©  All rights reserved.
  * See COPYING.txt for license details.
  */
-declare(strict_types=1);
 
 namespace WebMeridian\Brand\Model;
 
@@ -18,7 +17,7 @@ class Brand extends \Magento\Framework\Model\AbstractModel
 
     protected $dataObjectHelper;
 
-    protected $_eventPrefix = 'webmeridian_brand_brand';
+    protected $_eventPrefix = 'webmeridian_brand';
 
     /**
      * @param \Magento\Framework\Model\Context $context

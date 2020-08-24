@@ -3,7 +3,6 @@
  * Copyright ©  All rights reserved.
  * See COPYING.txt for license details.
  */
-declare(strict_types=1);
 
 namespace WebMeridian\Brand\Model\Data;
 
@@ -12,24 +11,6 @@ use WebMeridian\Brand\Api\Data\BrandInterface;
 class Brand extends \Magento\Framework\Api\AbstractExtensibleObject implements BrandInterface
 {
 
-    /**
-     * Get brand_id
-     * @return string|null
-     */
-    public function getBrandId()
-    {
-        return $this->_get(self::BRAND_ID);
-    }
-
-    /**
-     * Set brand_id
-     * @param string $brandId
-     * @return \WebMeridian\Brand\Api\Data\BrandInterface
-     */
-    public function setBrandId($brandId)
-    {
-        return $this->setData(self::BRAND_ID, $brandId);
-    }
 
     /**
      * Get id

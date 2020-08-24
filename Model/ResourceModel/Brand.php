@@ -17,7 +17,7 @@ class Brand extends \Magento\Framework\Model\ResourceModel\Db\AbstractDb
      */
     protected function _construct()
     {
-        $this->_init('webmeridian_brand_brand', 'brand_id');
+        $this->_init('webmeridian_brand', 'id');
     }
 }
 

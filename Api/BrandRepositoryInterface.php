@@ -3,7 +3,6 @@
  * Copyright ©  All rights reserved.
  * See COPYING.txt for license details.
  */
-declare(strict_types=1);
 
 namespace WebMeridian\Brand\Api;
 
@@ -28,7 +27,7 @@ interface BrandRepositoryInterface
      * @return \WebMeridian\Brand\Api\Data\BrandInterface
      * @throws \Magento\Framework\Exception\LocalizedException
      */
-    public function get($brandId);
+    public function getById($brandId);
 
     /**
      * Retrieve Brand matching the specified criteria.

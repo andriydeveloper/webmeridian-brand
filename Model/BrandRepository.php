@@ -3,7 +3,6 @@
  * Copyright ©  All rights reserved.
  * See COPYING.txt for license details.
  */
-declare(strict_types=1);
 
 namespace WebMeridian\Brand\Model;
 
@@ -119,7 +118,7 @@ class BrandRepository implements BrandRepositoryInterface
     /**
      * {@inheritdoc}
      */
-    public function get($brandId)
+    public function getById($brandId)
     {
         $brand = $this->brandFactory->create();
         $this->resource->load($brand, $brandId);

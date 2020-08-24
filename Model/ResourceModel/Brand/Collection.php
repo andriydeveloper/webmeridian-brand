@@ -3,7 +3,6 @@
  * Copyright ©  All rights reserved.
  * See COPYING.txt for license details.
  */
-declare(strict_types=1);
 
 namespace WebMeridian\Brand\Model\ResourceModel\Brand;
 
@@ -13,7 +12,7 @@ class Collection extends \Magento\Framework\Model\ResourceModel\Db\Collection\Ab
     /**
      * @var string
      */
-    protected $_idFieldName = 'brand_id';
+    protected $_idFieldName = 'id';
 
     /**
      * Define resource model

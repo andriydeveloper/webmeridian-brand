@@ -1,10 +1,14 @@
 <?xml version="1.0" ?>
 <schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
-	<table comment="webmeridian_brand_brand Table" engine="innodb" name="webmeridian_brand_brand" resource="default">
-		<column comment="Entity Id" identity="true" name="brand_id" nullable="false" padding="6" unsigned="true" xsi:type="smallint"/>
+	<table comment="webmeridian_brand Table" engine="innodb" name="webmeridian_brand" resource="default">
+		<column comment="Entity Id" identity="true" name="id" nullable="false" padding="6" unsigned="true" xsi:type="int"/>
 		<constraint referenceId="PRIMARY" xsi:type="primary">
-			<column name="brand_id"/>
+			<column name="id"/>
 		</constraint>
-		<column identity="false" name="id" nullable="true" xsi:type="int"/>
+		<column identity="false" name="title" nullable="false" xsi:type="text"/>
+		<column identity="false" name="brand_name" nullable="false" xsi:type="text"/>
+		<column identity="false" name="logo" nullable="false" xsi:type="text"/>
+		<column identity="false" name="content" nullable="false" xsi:type="text"/>
+		<column identity="false" name="description" nullable="false" xsi:type="text"/>
 	</table>
 </schema>

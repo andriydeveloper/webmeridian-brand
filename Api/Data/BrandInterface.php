@@ -3,7 +3,6 @@
  * Copyright ©  All rights reserved.
  * See COPYING.txt for license details.
  */
-declare(strict_types=1);
 
 namespace WebMeridian\Brand\Api\Data;
 
@@ -11,20 +10,7 @@ interface BrandInterface extends \Magento\Framework\Api\ExtensibleDataInterface
 {
 
     const ID = 'id';
-    const BRAND_ID = 'brand_id';
 
-    /**
-     * Get brand_id
-     * @return string|null
-     */
-    public function getBrandId();
-
-    /**
-     * Set brand_id
-     * @param string $brandId
-     * @return \WebMeridian\Brand\Api\Data\BrandInterface
-     */
-    public function setBrandId($brandId);
 
     /**
      * Get id
